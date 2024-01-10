@@ -14,7 +14,7 @@ const about = () => {
         <h2 className={styles.subtitle}>About Agency</h2>
         <h1 className={styles.title}>We Create digital ideas that are bigger, bolder, braver and better</h1>
         <p className={styles.desc}>
-          We belive in good ideas flexibility and precission we're world's our special team best consulting and finance solution provider.wide range of web and software development services
+         We belive in good ideas flexibility and precission we are world our special team best consulting and finance solution provider.wide range of web and software development services
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>

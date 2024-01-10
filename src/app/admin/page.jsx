@@ -32,7 +32,6 @@ const Admin = async () => {
           <AdminUserForum />
       </div>
       </div>
-
     </div>
   )
 }
