@@ -1,0 +1,32 @@
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .title {
+        color: gray;
+        font-weight: bold;
+    }
+    
+    .username{
+        font-weight: 500;
+    }
+
+    .avatar {
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .details {
+        display: flex;
+        gap:20px;
+    }
+    .det {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    
