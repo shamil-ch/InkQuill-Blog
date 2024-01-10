@@ -5,7 +5,7 @@ import PostCard from '@/components/postCard/postCard';
 
   // Fetch data with an API
   const getData  = async () => {
-    const res = await fetch("http://localhost:3000/api/blog")
+    const res = await fetch("https://ink-quill-blog.vercel.app/api/blog")
     if(!res.ok) {
       throw new Error("Somthing went wrong")
     }
