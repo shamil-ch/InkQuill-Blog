@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from './blog.module.css'
 import PostCard from '@/components/postCard/postCard';
-// import { getPosts } from '@/lib/data';
+ import { getPosts } from '@/lib/data';
 
   // Fetch data with an API
-  const getData  = async () => {
-    const res = await fetch("https://ink-quill-blog.vercel.app/api/blog")
+ /* const getData  = async () => {
+    const res = await fetch("http://ink-quill-blog.vercel.app/api/blog")
     if(!res.ok) {
       throw new Error("Somthing went wrong")
     }
     return res.json()
-  }
+  } */
 
  
 
@@ -23,10 +23,10 @@ import PostCard from '@/components/postCard/postCard';
 const blog = async () => {
 
   // Fetch data with an API
-  const posts = await getData();
+ // const posts = await getData();
 
     // Fetch data without an API
- // const posts = await getPosts();
+  const posts = await getPosts();
 
   return (
     <div className={styles.container}>
