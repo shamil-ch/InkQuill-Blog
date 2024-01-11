@@ -3,6 +3,12 @@ const nextConfig = {}
 
 module.exports = {
     images: {
-        domains: ["via.placeholder.com", "images.pexels.com"],
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: '**.example.com',
+          port: '',
+        },
+      ],
     },
-}
+  }
