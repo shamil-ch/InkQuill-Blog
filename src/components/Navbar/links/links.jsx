@@ -69,6 +69,20 @@ const Links = ({ session }) => {
                     {links.map((link) => (
                         <Navlink item={link} key={link.title}/>
                     ))}
+                     { session?.user ? (
+                <>
+                    { 
+                       session.user?.isAdmin && (
+                            <Navlink item={{title: "Admin", path: "/admin"}} />
+                        )
+                    }
+                    <form action={handleLogout}>
+                        <button className={styles.logout}>Logout</button>
+                    </form>
+                    </>
+                ) : (
+                     <Navlink item={{title: "Login", path: "/login"}} />
+                )}
                 </div>
             )}
         </div>
